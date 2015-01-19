@@ -5,9 +5,9 @@ body{
     font: inherit;
     font-size: 100%;
     vertical-align: baseline;
-    font-family: "jaf-bernin-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-    background:  url("../images/candle2.jpg") no-repeat center center fixed;
+    background:  url("../images/header-default.jpg") no-repeat center center fixed;
     background-size: cover;
+    font-family: "jaf-bernin-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 }
 a{
     color: #689f38;
@@ -25,6 +25,7 @@ a{
 .hero-container{
     background-color: #e5e5e5;
     text-align: center;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
 }
 .hero-avatar{
     align-content: center;
@@ -54,12 +55,15 @@ a{
     height: 15px;
 }
 #navigation{
-    text-align: center;
+    position: fixed;
+    text-align: left;
     background-color: #689f38;
     height: 50px;
     box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    width: 100%;
 }
 #navigation-div{
+    margin-left: 20px;
     margin-bottom: 10px;
 }
 #navigation a{
@@ -77,6 +81,11 @@ a{
     border-bottom: 3px solid #ffffff;
     color: #ffffff;
 }
+#navigation a:active{
+     padding: 6px;
+     border-bottom: 3px solid #ffffff;
+     color: #ffffff;
+ }
 .hero-description {
     color: rgba(0,0,0,0.6);
     font-size: 18px;
@@ -120,6 +129,11 @@ a{
     text-align: left;
 
 }
+.nav-shield{
+
+    width: 1000px;
+    margin: auto;
+}
 .about{
     float: left;
 }
@@ -129,7 +143,7 @@ a{
 .nav-field div.float{
     padding: 10px;
     border-radius: 3px;
-    width: 300px;
+    width: 430px;
     background-color: #fafafa;
     box-shadow: 0 5px 5px rgba(0,0,0,0.3);
 }
@@ -137,16 +151,28 @@ a{
     float: left;
     margin-left: 30px;
 }
+.nav-field div.group-item {
+    float: left;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 425px;
+}
 .nav-con{
     background-color: #eeeeee;
     text-align: center;
+    color: #34342D;
 }
-#footer{
+.footer_div{
+    background-color: #f9f9f9;}
+.footer{
     background-color: #f9f9f9;
 }
-#footer h4 {
+.footer h4 {
 
-    font-weight: 700;
+
     font-style: normal;
     padding-bottom: 10px;
     text-transform: uppercase;
@@ -158,8 +184,74 @@ a{
     border-bottom: 1px solid #f2f2f0;
     padding: 10px;
 }
-#footer .con{
+.footer .con{
     float: right;
-
+}
+.divition{
+    background-color: #eeeeee;
+}
+.other_shield{
+    width: 1000px;
+    margin: auto;
+    text-align: left;
+    padding-bottom: 20px;
 }
 
+
+.list-group-separator {
+    clear: both;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.list-group-item-heading {
+    color: rgba(0,0,0,.77);
+    font-size: 20px;
+    line-height: 29px;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.row-action-primary {
+    float: left;
+    display: inline-block;
+    padding-right: 16px;
+}
+
+ i {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 100%;
+    text-align: center;
+    line-height: 56px;
+    font-size: 20px;
+    color: white;
+}
+.list-group-item {
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 5px 0px 5px 0px;
+}
+
+.mdi-file-folder{
+    background-color: #dddddd ;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 56px;
+    font-size: 20px;
+    color: white;
+}
+.list-group-item-text{
+    margin-left: 80px;
+}
