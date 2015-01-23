@@ -8,9 +8,11 @@ body{
     background:  url("../images/header-default.jpg") no-repeat center center fixed;
     background-size: cover;
     font-family: "jaf-bernin-sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    transition: 0.9s;
 }
 a{
     color: #689f38;
+    text-decoration: none;
 }
 .container{
     background-color: #e5e5e5;
@@ -25,7 +27,6 @@ a{
 .hero-container{
     background-color: #e5e5e5;
     text-align: center;
-    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
 }
 .hero-avatar{
     align-content: center;
@@ -51,37 +52,52 @@ a{
     outline: 0;
 }
 .blank{
-    background-color: #689f38;
-    height: 15px;
+    background-color: #0f9d58;
+}
+.navigation{
+    width: 1000px;
+    margin: auto;
 }
 #navigation{
     position: fixed;
     text-align: left;
-    background-color: #689f38;
+    background-color: #0f9d58;
     height: 50px;
     box-shadow: 0 5px 5px rgba(0,0,0,0.3);
     width: 100%;
+    display: block;
 }
 #navigation-div{
     margin-left: 20px;
     margin-bottom: 10px;
+    display: inline;
 }
-#navigation a{
+#navigation-div img{
+    margin-top: 5px;
+    margin-bottom: -12px;
+    width: 40px;
+    height: 40px;
+}
+.scroll{
+       margin-top: 30px;
+}
+#navigation a.scroll{
     position: static;
     text-decoration: none;
     color: #c3d9af;
     padding: 6px;
+
 }
-#navigation a:link{
+#navigation a.scroll:link{
     padding: 6px;
     color: #ffffff;
 }
-#navigation a:hover{
+#navigation a.scroll:hover{
     padding: 6px;
     border-bottom: 3px solid #ffffff;
     color: #ffffff;
 }
-#navigation a:active{
+#navigation a.scroll:active{
      padding: 6px;
      border-bottom: 3px solid #ffffff;
      color: #ffffff;
@@ -95,7 +111,6 @@ a{
 }
 .clear{
     clear: left;
-    height: 50px;
 }
 .home-icon{
     position: fixed;
@@ -149,30 +164,27 @@ a{
 }
 .topic{
     float: left;
-    margin-left: 30px;
+    margin: 2px;
 }
 .nav-field div.group-item {
     float: left;
     padding: 10px 15px;
-    margin-bottom: -1px;
+    margin-bottom: 1px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
-    width: 425px;
+    width: 463px;
 }
 .nav-con{
     background-color: #eeeeee;
     text-align: center;
     color: #34342D;
 }
-.footer_div{
-    background-color: #f9f9f9;}
 .footer{
-    background-color: #f9f9f9;
+    width: 1000px;
+    margin: auto;
 }
 .footer h4 {
-
-
     font-style: normal;
     padding-bottom: 10px;
     text-transform: uppercase;
@@ -194,19 +206,8 @@ a{
     width: 1000px;
     margin: auto;
     text-align: left;
-    padding-bottom: 20px;
+    padding-bottom: 4px;
 }
-
-
-.list-group-separator {
-    clear: both;
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .list-group-item-heading {
     color: rgba(0,0,0,.77);
     font-size: 20px;
@@ -239,7 +240,7 @@ p {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
-    margin: 5px 0px 5px 0px;
+    margin: 3px;
 }
 
 .mdi-file-folder{
@@ -251,6 +252,10 @@ p {
     line-height: 56px;
     font-size: 20px;
     color: white;
+}
+.mdi-file-folder img{
+    height: 60px;
+    width: 60px;
 }
 .list-group-item-text{
     margin-left: 80px;
