@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="stylesheets/styles.css"/>
-    <title>ArchieCD.GitHub.io</title>
-    <script language="javascript" type="text/javascript" src="../js/smoothscroll.js"></script>
+    <title>ADTech - Home</title>
 </head>
 <body>
 <div id="navigation">
     <div class="navigation">
     <div id="navigation-div">
-
-        <a href="#home"><img src="images/ad.png"/></a>  <a class="scroll" href="#accessibility">Accessibility</a> <a class="scroll" href="#usability">Usability</a> <a class="scroll" href="#graphics">Graphics</a> <a class="scroll" href="#javascript">Javascript</a> <a class="scroll" href="#information">Tools</a> <a class="scroll" href="#information">Videos</a>
+        <a href="#home"><img src="images/ad.png"/></a>
+        <a class="selected" href="index.html">Home</a>
+        <a class="scroll" href="accessibility.html">Accessibility</a>
+        <a class="scroll" href="graphics.html">Graphics</a>
+        <a class="scroll" href="usability.html">Usability</a>
+        <a class="scroll" href="phpactivities.html">Activities</a>
+        <a class="scroll" href="video.html">Videos</a>
     </div>
         </div>
 </div>
+    <!-- home -->
 <div id="home">
 <div class="hero-mask">
     <div class="hero-cover">
@@ -31,81 +36,81 @@
         <div class="hero-title">
             Archie C. Dumayag
         </div>
-        <p class="hero-description">It seems we cannot find what you are looking for. Perhaps try to search? <br>
-            <a href="http://google.com">ENTER</a>
+        <p class="hero-description">It seems we cannot find what you are looking for. Perhaps try to search?</p>
+        <form method="get" action="http://www.google.com/search">
+            <input type="text" name="q" size="35" maxlength="255" value="" />
+            <input type="submit" value="Search" />
+        </form>
             <br>
-            <br></p>
     </div>
 </div>
+        <!-- container -->
+        <div id="overview">
     <div class="nav-con">
-        <div class="nav-field">
-            <div class="nav-shield">
-            <div id="information">
-            <div class="topic">
-                <h2>Personal Information</h2>
-                <div class="group-item">
-                    Name: Archie C. Dumayag<br>
-                    Email: Flipsoulja.ad@gmail.com<br>
-                    Interest:
-                    <ul>
-                        <li> Watching sports</li>
-                        <li> Eating</li>
-                        <li> Surfing internet</li>
-                        <li> Hung out with friends</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="topic">
-                <h2>Subject Information</h2>
-                <div class="group-item">
-                <p> Subject ID:<br>
-                    Descriptive Title:<br>
-                    Instructor:<br>
+        <!-- info -->
+        <div class="about-field">
+            <div class="box_border">
+                <h2>About Me</h2>
+                <p>Name: Archie C. Dumayag<br>
+                    Gender: Male<br>
+                    Course & Year: BSIT III<br>
+                    Email: <a href="mailto:flipsoulja.ad@gmail.com">flipsoulja.ad@gmail.com</a></p>
+                <a class="profile-link" href="https://facebook.com/kuku.arch" rel="author">See more</a>
+                <h3>Subject Information</h3>
+                <p> Subject ID: <br>
+                    Descriptive Title: Web Development<br>
+                    Instructor: Ms. Diane Jenalyn Datul<br>
                     Code: C17<br>
-                    University Name: USLT
+                    University Name: University of Saint Louis
                 </p>
-                </div>
             </div>
-            </div>
-                </div>
         </div>
-        <div class="clear">
-        </div>
+        <!-- info end -->
+        <!-- full content -->
         <div class="other_shield">
-        <div>
-            <div class="list-group-item">
-                <div class="row-action-primary">
-                    <div class="mdi-file-folder"><img src="images/folder.png"></div>
+            <div class="box_border">
+                <div class="row-content-icon">
+                    <div class="logo_folder"><img src="images/folder.png"></div>
                 </div>
                 <div class="row-content">
-                    <h4 class="list-group-item-heading">Overview</h4>
-                    <p class="list-group-item-text">This web portfolio will contain all the activities for web programming. Every activity will be linked to the different pages of this website.<br>
+                    <h4 class="box_border_title">Overview</h4>
+                    <p class="box_border_text">This web portfolio will contain all the activities for web programming. Every activity will be linked to the different pages of this website.<br>
                         This shall be my final requirement for this subject.</p>
                 </div>
-            </div>
-            <div class="list-group-item">
+                </div>
+            <div class="box_border">
                 <div id="accessibility">
             <h3> Accessibility</h3>
             <p> This section will include links to my work for this requirement once completed. </p>
                 </div>
                 </div>
-            <div class="list-group-item">
+            <div class="box_border">
                 <div id="graphics">
             <h3> Graphics</h3>
                 <p> This section will include links to my work for this requirement once completed. </p>
                 </div>   </div>
-            <div class="list-group-item">
-                <div id="javascript">
+            <div class="box_border">
+                <div id="video">
             <h3> Video</h3>
-                    <iframe width="560" height="315" src="//www.youtube.com/embed/JmvCpR45LKA" frameborder="0" allowfullscreen></iframe>
-                </div>    </div>
-        </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iJR-TbIjb2w" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
     </div>
+        <!-- full content end -->
+        </div>
+        </div>
+        <!-- container end -->
+        <div class="clear">
+        </div>
+        <!-- footer -->
     <div class="footer">
         <div class="con">
             <h4>Copyright © ADTech 2015</h4>
         </div>
     </div>
-</div>                          </div></div>
+        <!-- footer end -->
+</div>
+    </div>
+    <!-- home end -->
 </body>
 </html>

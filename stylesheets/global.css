@@ -1,0 +1,17 @@
+.global_division{
+    background-color: #eeeeee;
+    padding: 5px 0px 1px 0px;
+}
+.global_content{
+    width: 1000px;
+    margin: auto;
+}
+.blank{
+    height: 50px;
+}
+.box_border p{
+    font-size: 85%;
+}
+.box_border code{
+    font-size: 120%;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/global.css"/>
+    <title>ADTech - Accessibility</title>
+</head>
+<body>
+<div id="navigation">
+    <div class="navigation">
+        <div id="navigation-div">
+            <a href="#home"><img src="images/ad.png"/></a>
+            <a class="scroll" href="index.html">Home</a>
+            <a class="selected" href="accessibility.html">Accessibility</a>
+            <a class="scroll" href="graphics.html">Graphics</a>
+            <a class="scroll" href="usability.html">Usability</a>
+            <a class="scroll" href="phpactivities.html">Activities</a>
+            <a class="scroll" href="video.html">Videos</a>
+        </div>
+    </div>
+</div>
+<div class="blank"> </div>
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+                <h3><center>10 Easy Accessibility Tips Anyone Can Use</center></h3>
+                <p> Today is Global Accessibility Awareness Day (GAAD). To celebrate and to help promote accessibility, here are 10 simple accessibility tips that most anyone can implement today into their web site’s HTML and CSS to make it more accessible.</p>
+    </div>
+</div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3> 1. Add Alternative Text to Your Logo</h3>
+            <p><a href="http://webaim.org/techniques/alttext/">Alternative text</a> is presented to blind screen reader users in place of images they cannot see. Every image that conveys content or has a function on your web site should be given alternative text. But to get started, adding alternative text to your site logo presents your company or organization name to help users know which site they are on.</p>
+            <p>Simply find your logo image in your markup, and if it’s not present, add an <code>alt</code> attribute with your company or organization name as its value.</p>
+            <p><code>&lt;img src="webaimlogo.jpg" alt="WebAIM - Web Accessibility In Mind"&gt;</code></p>
+        </div>
+    </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>2. Add Basic Landmarks</h3>
+            <p><a href="http://webaim.org/techniques/aria/#structure">ARIA landmarks</a> identify significant page areas, giving them meaning and making them more keyboard navigable. There are several available landmark types, but simply adding 3 of them – main, navigation, and search – can greatly enhance the accessibility of your page. Find the elements on your page that surround or contain the main body content, main navigation, and site search (this one will probably be a <code>&lt;form&gt;</code> element) and add the appropriate landmark role attribute (<code>role="main"</code>, <code>role="navigation"</code>, or <code>role="search"</code>. If your site uses HTML5 <code>&lt;main&gt;</code> or <code>&lt;nav&gt;</code>, add the role to these elements.</p>
+            <p><code>&lt;div id="maincontent" role="main"&gt;</code></p>
+            <p><code>&lt;form action="search.php" role="search"&gt;</code></p>
+        </div>
+    </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>3. Enhance Focus Indicators</h3>
+            <p>Sighted keyboard users generally navigate through the links and form fields on a web page using the Tab and Shift+Tab keys on the keyboard. To help ensure they can visually identify which link or form field they have navigated to, you can add the following to your CSS file:</p>
+            <p><code>a:focus {<br>
+                outline:1px solid red;<br>
+                background:yellow;<br>
+                }</code></p>
+            <p>The colors may need to be customized to fit your site design, but they should be fairly distinctive.</p>
+            <p>To take this tip one step further, you can search your CSS files for <code>a:hover</code> and in each instance change it to <code>a:hover, a:focus</code>. This will ensure that keyboard users get the same visual highlighting when they navigate to items as mouse users get when they hover over an item.</p>
+        </div>
+    </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>4. Identify Required Form Fields</h3>
+            <p>If your form has a mix of required and non-required form fields, add the <code>aria-required="true"</code> attribute to each input that is required. This will identify them as required to screen reader users.</p>
+            <p><code>&lt;input type="text" name="username" aria-required="true"&gt;</code></p>
+        </div>
+    </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>5. Make Your Page Title an &lt;h1&gt;</h3>
+            <p>Your page title (not to be confused with the <code>&lt;title&gt;</code> element, though this should be brief and descriptive of the page content) is generally the big, bold text typically at the beginning of the main content that describes the content or functionality of that page. While a good <a href="http://webaim.org/techniques/semanticstructure/">heading structure</a> for your entire document is great for accessibility, simply making your main page title an <code>&lt;h1&gt;</code> will facilitate page navigation and comprehension.</p>       </div>
+        </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>6. Identify Table Headers</h3>
+            <p>If your site has <a href="http://webaim.org/techniques/tables/data">data tables</a>, you can make them much more accessible by marking up table header cells appropriately. Find the row and/or column headers (almost always the cells in the first row and first column) and make sure they are marked up using the <code>&lt;th&gt;</code> element (stands for table header) instead of the <code>&lt;td&gt;</code> element (stands for table data). The <code>&lt;th&gt;</code> element should be given a <code>scope</code> attribute value of <code>col</code> if it’s a column header or <code>row</code> if it’s a row header.</p>
+            <p>Change <code>&lt;td&gt;Date&lt;/td&gt;</code> to <code>&lt;th scope="col"&gt;Date&lt;/th&gt;</code></p>
+        </div>
+    </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>7. Identify Table Captions</h3>
+            <p>Most data tables have short descriptive text immediately before the data table that describes that table. You can associate that description or table caption to the table itself using the <code>&lt;caption&gt;</code> element. This element should be the first thing inside your <code>&lt;table&gt;</code> tag.</p>
+            <p>For example, you would change<br>
+                <code>&lt;p&gt;Class Schedule&lt;/p&gt;<br>
+                    &lt;table&gt;&lt;tr&gt;....</code></p>
+            <p>to<br>
+                <code>&lt;table&gt;<br>
+                    &lt;caption&gt;Class Schedule&lt;/caption&gt;<br>
+                    &lt;tr&gt;....</code></p>
+        </div>
+    </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>8. Avoid "click here"</h3>
+            <p>Search your site for the words "click here". This <a href="http://webaim.org/techniques/hypertext/link_text">link text</a> is ambiguous for all users, but is particularly difficult for screen reader users. It always adds additional, unnecessary text. Change the link text to be more descriptive of the content or function of the link.</p>
+            <p>For example, you would change<br>
+                <code>&lt;a href="prices.htm"&gt;Click here&lt;/a&gt; for prices</code></p>
+            <p>to<br>
+                <code>&lt;a href="prices.htm"&gt;Prices&lt;/a&gt;</code></p>
+        </div>
+    </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>9. Remove tabindex</h3>
+            <p>Search your site's code for any <a href="http://webaim.org/techniques/keyboard/tabindex"><code>tabindex</code></a> attributes. If the attribute value is 1 or higher, and you're not absolutely sure why it was added or that it was added correctly, remove this attribute. Tabindex specifies a keyboard navigation order, but almost always causes more accessibility issues than it solves. If your navigation order is not logical (you can test this by navigating with the Tab key), you should restructure your underlying code so that it is logical.</p>
+        </div>
+    </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>10. Check Your Page in WAVE</h3>
+            <p>The <a href="http://wave.webaim.org/">WAVE web accessibility evaluation tool</a> is an easy-to-use tool that gives you feedback about your web site and facilitates additional evaluation. Simply go to <a href="http://wave.webaim.org/">http://wave.webaim.org/</a>, enter your web page URL, and hit the button to get feedback on your page's accessibility.</p>
+        </div>
+    </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <p><b>Source:</b> <a href="http://webaim.org/blog/10-easy-accessibility-tips/">http://webaim.org/blog/10-easy-accessibility-tips/</a> </p>
+        </div>
+    </div>
+</div>
+<!-- container end -->
+<!-- footer -->
+<div class="footer">
+    <div class="con">
+        <h4>Copyright © ADTech 2015</h4>
+    </div>
+</div>
+<!-- footer end -->
+
+
+
+</body>
+</html>
