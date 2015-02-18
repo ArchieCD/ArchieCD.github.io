@@ -31,16 +31,6 @@ body{
 .content {
 	width: 57%;
 	margin: 0 auto;
-	border-top: 1px solid rgba(226, 226, 226, 0.69);
-	border-right: 1px solid rgba(226, 226, 226, 0.22);
-	border-bottom: 1px solid rgba(51, 51, 51, 0.26);
-	border-left: 1px solid rgba(151, 151, 151, 0.28);
-	-webkit-background-origin: border-box;
-	-moz-background-origin: border;
-	background-origin: border-box;
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, .15)), to(rgba(0, 0, 0, .25))), -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.5, rgba(255, 255, 255, .15)), color-stop(0.501, rgba(255, 255, 255, 0)), color-stop(1, rgba(255, 255, 255, 0)));
-	background: -moz-linear-gradient(top, rgba(255, 255, 255, .15), rgba(0, 0, 0, .25)), -moz-linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
-	background: linear-gradient(top, rgba(255, 255, 255, .15), rgba(0, 0, 0, .25)), linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
 	padding: 4em;
 	margin-top: 5px;
 }
