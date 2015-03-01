@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/global.css"/>
+    <title>ADTech - Accessibility</title>
+</head>
+<body>
+<div class="body">
+    <div id="navigation-red">
+        <div class="navigation">
+            <div id="navigation-div">
+                <a href="index.html"><img src="images/ad.png" alt="ADTech Logo" title="ADTech Logo"/></a>
+                <ul class="navigation-margin">
+                    <li><a class="scroll" href="index.html" title="Home">Home</a></li>
+                    <li><a class="selected-red" href="accessibility.html" title="Accessibility">Accessibility</a></li>
+                    <li><a class="scroll" href="graphics.html" title="Graphics">Graphics</a></li>
+                    <li><a class="scroll" href="usability.html" title="Usability">Usability</a></li>
+                    <li><a class="scroll" href="phpactivities.html" title="Activities">Activities</a></li>
+                    <li><a class="scroll" href="video.html" title="Videos">Videos</a></li>
+                </ul>
+                <div class="clear"> </div>
+            </div>
+        </div>
+    </div>
+<div class="blank"> </div>
+<div class="global_container">
+<div class="global_div_title">
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>Accessibility</h3>
+            <p> This page include different web accessibility tips.  </p>
+    </div>
+</div>
+</div>
+<!-- container end -->
+</div>
+<div class="global_div_overview">
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>Add Alternative Text to Your Logo</h3>
+            <p><u>Alternative text</u> is presented to blind screen reader users in place of images they cannot see. Every image that conveys content or has a function on your web site should be given alternative text. But to get started, adding alternative text to your site logo presents your company or organization name to help users know which site they are on.</p>
+            <p>Simply find your logo image in your markup, and if it’s not present, add an <code>alt</code> attribute with your company or organization name as its value.</p>
+            <p><code>&lt;img src="webaimlogo.jpg" alt="WebAIM - Web Accessibility In Mind"&gt;</code></p>
+        </div>
+    </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>Add Basic Landmarks</h3>
+            <p><u>ARIA landmarks</u> identify significant page areas, giving them meaning and making them more keyboard navigable. There are several available landmark types, but simply adding 3 of them – main, navigation, and search – can greatly enhance the accessibility of your page. Find the elements on your page that surround or contain the main body content, main navigation, and site search (this one will probably be a <code>&lt;form&gt;</code> element) and add the appropriate landmark role attribute (<code>role="main"</code>, <code>role="navigation"</code>, or <code>role="search"</code>. If your site uses HTML5 <code>&lt;main&gt;</code> or <code>&lt;nav&gt;</code>, add the role to these elements.</p>
+            <p><code>&lt;div id="maincontent" role="main"&gt;</code></p>
+            <p><code>&lt;form action="search.php" role="search"&gt;</code></p>
+        </div>
+    </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>Enhance Focus Indicators</h3>
+            <p>Sighted keyboard users generally navigate through the links and form fields on a web page using the Tab and Shift+Tab keys on the keyboard. To help ensure they can visually identify which link or form field they have navigated to, you can add the following to your CSS file:</p>
+            <p><code>a:focus {<br>
+                outline:1px solid red;<br>
+                background:yellow;<br>
+                }</code></p>
+            <p>The colors may need to be customized to fit your site design, but they should be fairly distinctive.</p>
+            <p>To take this tip one step further, you can search your CSS files for <code>a:hover</code> and in each instance change it to <code>a:hover, a:focus</code>. This will ensure that keyboard users get the same visual highlighting when they navigate to items as mouse users get when they hover over an item.</p>
+        </div>
+    </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>Identify Required Form Fields</h3>
+            <p>If your form has a mix of required and non-required form fields, add the <code>aria-required="true"</code> attribute to each input that is required. This will identify them as required to screen reader users.</p>
+            <p><code>&lt;input type="text" name="username" aria-required="true"&gt;</code></p>
+        </div>
+    </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>Make Your Page Title an &lt;h1&gt;</h3>
+            <p>Your page title (not to be confused with the <code>&lt;title&gt;</code> element, though this should be brief and descriptive of the page content) is generally the big, bold text typically at the beginning of the main content that describes the content or functionality of that page. While a good <u>heading structure</u> for your entire document is great for accessibility, simply making your main page title an <code>&lt;h1&gt;</code> will facilitate page navigation and comprehension.</p>       </div>
+        </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>Identify Table Headers</h3>
+            <p>If your site has <u>data tables</u>, you can make them much more accessible by marking up table header cells appropriately. Find the row and/or column headers (almost always the cells in the first row and first column) and make sure they are marked up using the <code>&lt;th&gt;</code> element (stands for table header) instead of the <code>&lt;td&gt;</code> element (stands for table data). The <code>&lt;th&gt;</code> element should be given a <code>scope</code> attribute value of <code>col</code> if it’s a column header or <code>row</code> if it’s a row header.</p>
+            <p>Change <code>&lt;td&gt;Date&lt;/td&gt;</code> to <code>&lt;th scope="col"&gt;Date&lt;/th&gt;</code></p>
+        </div>
+    </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>Identify Table Captions</h3>
+            <p>Most data tables have short descriptive text immediately before the data table that describes that table. You can associate that description or table caption to the table itself using the <code>&lt;caption&gt;</code> element. This element should be the first thing inside your <code>&lt;table&gt;</code> tag.</p>
+            <p>For example, you would change<br>
+                <code>&lt;p&gt;Class Schedule&lt;/p&gt;<br>
+                    &lt;table&gt;&lt;tr&gt;....</code></p>
+            <p>to<br>
+                <code>&lt;table&gt;<br>
+                    &lt;caption&gt;Class Schedule&lt;/caption&gt;<br>
+                    &lt;tr&gt;....</code></p>
+        </div>
+    </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>Avoid "click here"</h3>
+            <p>Search your site for the words "click here". This <u>link text</u> is ambiguous for all users, but is particularly difficult for screen reader users. It always adds additional, unnecessary text. Change the link text to be more descriptive of the content or function of the link.</p>
+            <p>For example, you would change<br>
+                <code>&lt;a href="prices.html"&gt;Click here&lt;/a&gt; for prices</code></p>
+            <p>to<br>
+                <code>&lt;a href="prices.html"&gt;Prices&lt;/a&gt;</code></p>
+        </div>
+    </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <h3>Remove tabindex</h3>
+            <p>Search your site's code for any <u>tabindex</u> attributes. If the attribute value is 1 or higher, and you're not absolutely sure why it was added or that it was added correctly, remove this attribute. Tabindex specifies a keyboard navigation order, but almost always causes more accessibility issues than it solves. If your navigation order is not logical (you can test this by navigating with the Tab key), you should restructure your underlying code so that it is logical.</p>
+        </div>
+    </div>
+</div>
+<!-- container end -->
+<!-- container -->
+<div class="global_division">
+    <div class="global_content">
+        <div class="box_border">
+            <p><b>Source:</b> <a href="http://webaim.org/blog/10-easy-accessibility-tips/">http://webaim.org/blog/10-easy-accessibility-tips/</a> </p>
+        </div>
+    </div>
+</div>
+</div>
+<!-- container end -->
+<div class="clear">
+</div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="con">
+            <div class="social">
+                <a href="http://facebook.com/kuku.arch"><img src="images/facebook.png" alt="facebook icon" title="Facebook"></a>
+                <a href="http://github.com/archiecd"><img src="images/github.png" alt="github icon" title="Github"></a>
+                <a href="http://plus.google.com/100063669261115958940"><img src="images/google+.png" alt="google+ icon" title="Google+"></a>
+            </div>
+            <h4>Copyright © ADTech 2015</h4>
+            <div class="clear"> </div>
+        </div>
+    </div>
+    <!-- footer end -->
+
+
+</div>
+</body>
+</html>

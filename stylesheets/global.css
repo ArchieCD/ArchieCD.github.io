@@ -1,0 +1,49 @@
+.global_division{
+    background-color: #eeeeee;
+    padding: 0px 0px 1px 0px;
+    color: rgba(0,0,0,0.8);
+}
+.global_content{
+    margin: auto;
+}
+.blank{
+    height: 50px;
+}
+.box_border p{
+    font-size: 85%;
+}
+.box_border code{
+    font-size: 120%;
+}
+.global_div_title{
+    float: left;
+    width: 310px;
+}
+.global_div_overview{
+    float: left;
+    width: 650px;
+}
+.global_container{
+    width: 1000px;
+    margin: auto;
+    padding: 7px 0px 2px 0px;
+}
+.body{
+    background-color: #eeeeee;
+}
+.box_border h3{
+    text-transform: uppercase;
+}
+td img{
+    border-radius: 5px;
+    height: 150px;
+    width: 150px;
+    margin: 1px 4px 1px 4px;
+}
+td a:hover{
+    opacity: .5;
+    transition: 0.9s;
+}
+.video{
+    border-radius: 6px;
+}
